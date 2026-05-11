@@ -5,21 +5,21 @@
 class Deja < Formula
   desc "Predictive inline shell autosuggestions for zsh."
   homepage "https://github.com/Giammarco-Ferranti/deja"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.3/deja_0.2.3_darwin_amd64.tar.gz"
-      sha256 "16721756f8f9548e0aa25d24e378fbc6b7f95dc5af61abdee50550cbf9a0b873"
+      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.4/deja_0.2.4_darwin_amd64.tar.gz"
+      sha256 "258c037a3e67428d7273439f7ae3ee001f2f9a4a47d2437477d016adb70caeee"
 
       define_method(:install) do
         bin.install "deja"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.3/deja_0.2.3_darwin_arm64.tar.gz"
-      sha256 "9884b677334a4077990c495fca201add02b3f783fc9c58b86fe8750025b6bac5"
+      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.4/deja_0.2.4_darwin_arm64.tar.gz"
+      sha256 "765850e118eaf010f5e0c52c115f83bee2cd7abba262721ce9bc5fde394ac485"
 
       define_method(:install) do
         bin.install "deja"
@@ -29,15 +29,15 @@ class Deja < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.3/deja_0.2.3_linux_amd64.tar.gz"
-      sha256 "f896d33b24bec82a66fe5c70d08834d6e72cd212d38b5433c2d7c536a1b61c5b"
+      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.4/deja_0.2.4_linux_amd64.tar.gz"
+      sha256 "aafd657be64c476f0cc3d329e6e0e894be406f0bed49b8714fb9782f50ebfeba"
       define_method(:install) do
         bin.install "deja"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.3/deja_0.2.3_linux_arm64.tar.gz"
-      sha256 "dcf435810fb7df552572a9cb8c0a76c3ec07a68a972831a4734b6c6859e4e68a"
+      url "https://github.com/Giammarco-Ferranti/deja/releases/download/v0.2.4/deja_0.2.4_linux_arm64.tar.gz"
+      sha256 "f51565978a3bab5231473c120722cfa082cf07f1343abe2a39b6b2db045d0d7b"
       define_method(:install) do
         bin.install "deja"
       end
